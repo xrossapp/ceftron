@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UITestSearchPropertyConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="IEPropertyConfiguration.xsd">
+ <!-- Default Property Configuration for IE plugin -->
+ <!-- ApplySmartConfiguration feature to apply a smart logic over this configuration -->
+ <!-- ApplySmartConfiguration might cause some properties to move between
+      search and filter properties based on their values or even get removed as well.
+     (for example, due to invalid values on some controls for those properties. -->
+ 
+ <ControlTypes ApplySmartConfiguration="true">
+  
+   <ControlType Name="Audio">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Title"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Src"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+   <ControlType Name="Body">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="RedirectingPage"/>
+           <Property Name="FrameDocument"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="AbsolutePath"/>
+           <Property Name="PageUrl"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Button">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="DisplayText"/>
+           <Property Name="Type"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Src"/>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="CheckBox">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Value"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="ComboBox">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Size"/>
+           <Property Name="Title"/>
+           <Property Name="ItemCount"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+   <ControlType Name="FileInput">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Frame">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="AbsolutePath"/>
+           <Property Name="PageUrl"/>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="FrameSet">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Columns"/>
+           <Property Name="Class"/>        
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Hyperlink">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Target"/>
+           <Property Name="InnerText"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="AbsolutePath"/>
+           <Property Name="Title"/>
+           <Property Name="Href"/>
+           <Property Name="Class"/>        
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Image">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Alt"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="AbsolutePath"/>
+           <Property Name="Src"/>
+           <Property Name="LinkAbsolutePath"/>
+           <Property Name="Href"/>
+           <Property Name="Class"/>        
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="InputButton">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="DisplayText"/>
+           <Property Name="Type"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Src"/>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Label">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabelFor"/>
+           <Property Name="InnerText"/>
+      </SearchProperties>
+     <FilterProperties>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+     </FilterProperties>
+   </ControlType>
+   
+    <ControlType Name="OptionElement">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="InnerText"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Pane">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="InnerText"/>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="ProgressBar">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Max"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Slider">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Class"/>        
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="RadioButton">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Value"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="ItemCount"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="Table">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="InnerText"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="RowCount"/>
+           <Property Name="ColumnCount"/>
+           <Property Name="Class"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+
+   <ControlType Name="TableCell">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="MaxDepth"/>
+           <Property Name="InnerText"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="ControlDefinition"/>
+           <Property Name="RowIndex"/>
+           <Property Name="ColumnIndex"/>
+           <Property Name="Class"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+   <ControlType Name="TableRow">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="MaxDepth"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="InnerText"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="RowIndex"/>
+           <Property Name="Class"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+   <ControlType Name="TextArea">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+
+   <ControlType Name="TextInput">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="LabeledBy"/>
+           <Property Name="Type"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Title"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+   <ControlType Name="Video">
+      <SearchProperties>
+           <Property Name="Id"/>
+           <Property Name="Name"/>
+           <Property Name="Title"/>
+      </SearchProperties>
+      <FilterProperties>
+           <Property Name="Src"/>
+           <Property Name="Poster"/>
+           <Property Name="Class"/>
+           <Property Name="ControlDefinition"/>
+           <Property Name="TagInstance"/>
+      </FilterProperties>
+   </ControlType>
+   
+  </ControlTypes>
+</UITestSearchPropertyConfiguration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

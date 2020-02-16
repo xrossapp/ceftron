@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Type Definitions -->
+<xs:simpleType name="BrowserControlType">
+   <xs:restriction base="xs:string">
+      <xs:enumeration value="Audio"/>
+      <xs:enumeration value="Body"/>
+      <xs:enumeration value="Button"/>
+      <xs:enumeration value="CheckBox"/>
+      <xs:enumeration value="ComboBox"/>
+      <xs:enumeration value="FileInput"/>
+      <xs:enumeration value="Frame"/>
+      <xs:enumeration value="FrameSet"/>
+      <xs:enumeration value="Hyperlink"/>
+      <xs:enumeration value="Image"/>
+      <xs:enumeration value="InputButton"/>
+      <xs:enumeration value="Label"/>
+      <xs:enumeration value="OptionElement"/>
+      <xs:enumeration value="Pane"/>
+      <xs:enumeration value="ProgressBar"/>
+      <xs:enumeration value="Slider"/>
+      <xs:enumeration value="RadioButton"/>
+      <xs:enumeration value="Table"/>
+      <xs:enumeration value="TableCell"/>
+      <xs:enumeration value="TableRow"/>
+      <xs:enumeration value="TextArea"/>
+      <xs:enumeration value="TextInput"/>
+      <xs:enumeration value="Video"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="PropertyDetails">
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="SearchPropertySet">
+   <xs:sequence>
+      <xs:element name="Property" type="PropertyDetails" minOccurs="1" maxOccurs="unbounded"/>
+   </xs:sequence>
+</xs:complexType>
+ 
+<xs:complexType name="FilterPropertySet">
+   <xs:sequence>
+      <xs:element name="Property" type="PropertyDetails" minOccurs="0" maxOccurs="unbounded"/>
+   </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ControlTypeDetails">
+     <xs:sequence>
+         <xs:element ref="SearchProperties"/>
+         <xs:element ref="FilterProperties"/>
+     </xs:sequence>
+     <xs:attribute name="Name" type="BrowserControlType" use="required"/>
+</xs:complexType>
+
+<!-- Elements -->
+<xs:element name="ControlTypes">
+     <xs:complexType>
+         <xs:sequence>
+             <xs:element name="ControlType" type="ControlTypeDetails" minOccurs="1" maxOccurs="unbounded"/>
+         </xs:sequence>
+         <xs:attribute name="ApplySmartConfiguration" type="xs:boolean"/>
+     </xs:complexType>
+
+     <xs:unique name="UniqueControlType">
+       <xs:selector xpath="ControlType"/>
+       <xs:field xpath="@Name"/>
+     </xs:unique>
+</xs:element>
+
+<xs:element name="SearchProperties" type="SearchPropertySet">
+     <xs:unique name="UniquePrimaryProperties">
+           <xs:selector xpath="Property"/>
+           <xs:field xpath="@Name"/>
+     </xs:unique>
+</xs:element>
+
+<xs:element name="FilterProperties" type="FilterPropertySet">
+     <xs:unique name="UniqueFilterProperties">
+           <xs:selector xpath="Property"/>
+           <xs:field xpath="@Name"/>
+     </xs:unique>
+</xs:element>
+
+<!-- Root -->
+<xs:element name="UITestSearchPropertyConfiguration">
+  <xs:complexType>
+    <xs:sequence>
+     <xs:element ref="ControlTypes"/>
+    </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
