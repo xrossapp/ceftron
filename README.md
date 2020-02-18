@@ -5,5 +5,6 @@ Prerequisties:
 Install .NET framework v4.8 for Windows from here:
 https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-developer-pack-offline-installer
 
-Feautures:
-Convert a hosted website into a Windows executable.
+Features:
+
+Serve a hosted website as a desktop app, serve local web files as a desktop app.
