@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ceftron", "ceftron\ceftron.csproj", "{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ceftron", "ceftron\ceftron.csproj", "{3D949EE5-0854-436E-8B00-4A944D771BFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +13,19 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Debug|x64.ActiveCfg = Debug|x64
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Debug|x64.Build.0 = Debug|x64
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Debug|x86.ActiveCfg = Debug|x86
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Release|x64.ActiveCfg = Release|x64
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Release|x64.Build.0 = Release|x64
-		{ECD7CB7B-4D7E-485E-961D-D01BC5902E91}.Release|x86.ActiveCfg = Release|x64
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Debug|x64.ActiveCfg = Debug|x64
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Debug|x64.Build.0 = Debug|x64
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Debug|x86.ActiveCfg = Debug|x86
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Debug|x86.Build.0 = Debug|x86
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Release|x64.ActiveCfg = Release|x64
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Release|x64.Build.0 = Release|x64
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Release|x86.ActiveCfg = Release|x86
+		{3D949EE5-0854-436E-8B00-4A944D771BFD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FF94AEBF-2D6A-4805-B998-CAF02DAB8598}
+		SolutionGuid = {C6862322-EC87-461C-925D-DCE46B55ECD5}
 	EndGlobalSection
 EndGlobal

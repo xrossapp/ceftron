@@ -3,30 +3,15 @@
 set backdir=%CD%
 set titl=%1
 set hsite=%2
-(
-echo ^<Window x:Class="ceftron.MainWindow"
-echo        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-echo        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-echo        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-echo        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-echo        xmlns:cefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
-echo        mc:Ignorable="d"
-echo        Title="%titl%" Height="450" Width="800" Background="White"^>
-echo    ^<Grid^>
-echo        ^<cefSharp:ChromiumWebBrowser x:Name="cefview" IsBrowserInitializedChanged="browser_IsBrowserInitializedChanged"^>^</cefSharp:ChromiumWebBrowser^>
-echo    ^</Grid^>
-echo ^</Window^>
-)> "%backdir%\ceftron\MainWindow.xaml"
-echo %hsite%
-echo using System.IO; > "%backdir%\ceftron\MainWindow.xaml.cs"
-echo using System.Windows; >> "%backdir%\ceftron\MainWindow.xaml.cs"
-echo namespace ceftron >> "%backdir%\ceftron\MainWindow.xaml.cs"
-echo { public partial class MainWindow : Window {public MainWindow() >> "%backdir%\ceftron\MainWindow.xaml.cs"
-echo {InitializeComponent();} >> "%backdir%\ceftron\MainWindow.xaml.cs"
-echo private void browser_IsBrowserInitializedChanged(object sender, DependencyPropertyChangedEventArgs e) >> "%backdir%\ceftron\MainWindow.xaml.cs"
-if %hsite%==local echo {string html = File.ReadAllText("localRes/web/index.html");CefSharp.WebBrowserExtensions.LoadHtml(cefview, html, "http://www.example.com/");} >> "%backdir%\ceftron\MainWindow.xaml.cs"
-if NOT %hsite%==local echo {cefview.Load("%hsite%");} >> "%backdir%\ceftron\MainWindow.xaml.cs"
-echo }} >> "%backdir%\ceftron\MainWindow.xaml.cs"
+echo using CefSharp;using CefSharp.WinForms;using System.IO;using System.Windows.Forms; > "%backdir%\ceftron\Form1.cs"
+echo namespace ceftron{public partial class Form1 : Form {public ChromiumWebBrowser cefcon; >> "%backdir%\ceftron\Form1.cs"
+echo public Form1(){InitializeComponent();initCeftron();} >> "%backdir%\ceftron\Form1.cs"
+echo public void initCeftron(){ CefSettings settings = new CefSettings();settings.CachePath = "temp";Cef.Initialize(settings); >> "%backdir%\ceftron\Form1.cs"
+echo this.Text = "%titl%"; >> "%backdir%\ceftron\Form1.cs"
+if %hsite%==local echo cefcon = new ChromiumWebBrowser("");string html = File.ReadAllText("localRes/web/index.html");CefSharp.WebBrowserExtensions.LoadHtml(cefcon, html, "http://www.example.ceftron/"); >> "%backdir%\ceftron\Form1.cs"
+if NOT %hsite%==local echo cefcon = new ChromiumWebBrowser("%hsite%"); >> "%backdir%\ceftron\Form1.cs"
+echo this.Controls.Add(cefcon);cefcon.Dock = DockStyle.Fill;} >> "%backdir%\ceftron\Form1.cs"
+echo private void Form1_FormClosing(object sender, FormClosingEventArgs e){Cef.Shutdown();}}} >> "%backdir%\ceftron\Form1.cs"
 set msp="%backdir%\build\MSBuild\current\Bin\"
 @cd %msp%
 @echo "RESTORING PACKAGES...................................."
