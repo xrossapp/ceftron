@@ -24,7 +24,6 @@ Path of the app: ceftron\bin\x64\Release \
 Open ceftron.exe to run your app.\
 You can rename the exe file.
 
-## GUIDE
 
 ### (Display local web files as Windows app)
 
