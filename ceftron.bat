@@ -10,7 +10,7 @@ echo public void initCeftron(){ CefSettings settings = new CefSettings();setting
 echo this.Text = "%titl%"; >> "%backdir%\ceftron\Form1.cs"
 if %hsite%==local echo settings.RegisterScheme(new CefCustomScheme{SchemeName = "https",DomainName = "dash.ceftron",SchemeHandlerFactory = new FolderSchemeHandlerFactory(rootFolder: @"localRes/web",hostName: "dash.ceftron",defaultPage: "index.html")});Cef.Initialize(settings);cefcon = new ChromiumWebBrowser("https://dash.ceftron/"); >> "%backdir%\ceftron\Form1.cs"
 if NOT %hsite%==local echo Cef.Initialize(settings);cefcon = new ChromiumWebBrowser("%hsite%"); >> "%backdir%\ceftron\Form1.cs"
-echo this.Controls.Add(cefcon);cefcon.Dock = DockStyle.Fill;} >> "%backdir%\ceftron\Form1.cs"
+echo cefcon.MenuHandler = new MenuHandler();cefcon.DownloadHandler = new DownloadHandler();this.Controls.Add(cefcon);cefcon.Dock = DockStyle.Fill;} >> "%backdir%\ceftron\Form1.cs"
 echo private void Form1_FormClosing(object sender, FormClosingEventArgs e){Cef.Shutdown();}}} >> "%backdir%\ceftron\Form1.cs"
 set msp="%backdir%\build\MSBuild\current\Bin\"
 @cd %msp%
