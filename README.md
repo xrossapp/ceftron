@@ -20,7 +20,7 @@ Input following commands in terminal:
 ```
 ceftron AppName example.com
 ```
-Path of the app: ceftron\bin\x64\Release
+Path of the app: ceftron\bin\x64\Release \
 Open ceftron.exe to run your app.\
 You can rename the exe file.
 
