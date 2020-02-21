@@ -18,6 +18,8 @@ set msp="%backdir%\build\MSBuild\current\Bin\"
 msbuild "%backdir%\ceftron.sln" /t:restore
 @echo "BUILDING.............................................."
 msbuild.exe "%backdir%\ceftron.sln" /p:configuration=release
+@cd %backdir%\ceftron\bin\x64\Release\
+@rename ceftron.exe %titl%.exe
 @cd %backdir%
 if %hsite%==local echo Put your web files (entry point:index.html) in this directory of your release build^:(Release/localRes/web)
 @echo Done

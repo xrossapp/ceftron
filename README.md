@@ -18,11 +18,17 @@ Open the downloaded folder path in Windows command line terminal.\
 Input following commands in terminal:
 
 ```
-ceftron AppName example.com
+ceftron <AppName> <domain name>
 ```
+
 Path of the app: ceftron\bin\x64\Release \
-Open ceftron.exe to run your app.\
+Open <AppName>.exe to run your app.\
 You can rename the exe file.
+
+Example:
+```
+ceftron DashForms forms.dash.management/console
+```
 
 
 ### (Display local web files as Windows app)
@@ -32,12 +38,17 @@ Open the downloaded folder path in Windows command line terminal.\
 Input following commands in terminal:
 
 ```
-ceftron AppName local
+ceftron <AppName> local
 ```
 Path of the app: ceftron\bin\x64\Release
 
 Create a new folder here : localRes \
 Inside localRes, create another folder named "web" and put all your web files in it with root file as index.html.
 
-Open ceftron.exe to run your app.\
+Open <AppName>.exe to run your app.\
 You can rename the exe file.
+
+Example:
+```
+ceftron DashForms local
+```
