@@ -22,7 +22,7 @@ ceftron <AppName> <domain name>
 ```
 
 Path of the app: ceftron\bin\x64\Release \
-Open <AppName>.exe to run your app.\
+Open ceftron.exe to run your app.\
 You can rename the exe file.
 
 Example:
@@ -45,7 +45,7 @@ Path of the app: ceftron\bin\x64\Release
 Create a new folder here : localRes \
 Inside localRes, create another folder named "web" and put all your web files in it with root file as index.html.
 
-Open <AppName>.exe to run your app.\
+Open ceftron.exe to run your app.\
 You can rename the exe file.
 
 Example:
