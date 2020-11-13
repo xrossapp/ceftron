@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amandeep Pooni\\Desktop\\ceftron\\ceftron\\ceftron.csproj": {}
+    "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\ceftron.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amandeep Pooni\\Desktop\\ceftron\\ceftron\\ceftron.csproj": {
+    "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\ceftron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amandeep Pooni\\Desktop\\ceftron\\ceftron\\ceftron.csproj",
+        "projectUniqueName": "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\ceftron.csproj",
         "projectName": "ceftron",
-        "projectPath": "C:\\Users\\Amandeep Pooni\\Desktop\\ceftron\\ceftron\\ceftron.csproj",
+        "projectPath": "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\ceftron.csproj",
         "packagesPath": "C:\\Users\\Amandeep Pooni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amandeep Pooni\\Desktop\\ceftron\\ceftron\\obj\\",
+        "outputPath": "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -36,7 +36,7 @@
           "dependencies": {
             "CefSharp.WinForms": {
               "target": "Package",
-              "version": "[79.1.360, )"
+              "version": "[85.3.130, )"
             }
           }
         }

@@ -4,7 +4,7 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)cefsharp.common\79.1.360\build\CefSharp.Common.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\79.1.360\build\CefSharp.Common.targets')" />
-    <Import Project="$(NuGetPackageRoot)cefsharp.winforms\79.1.360\build\CefSharp.WinForms.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.winforms\79.1.360\build\CefSharp.WinForms.targets')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.common\85.3.130\build\CefSharp.Common.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\85.3.130\build\CefSharp.Common.targets')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.winforms\85.3.130\build\CefSharp.WinForms.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.winforms\85.3.130\build\CefSharp.WinForms.targets')" />
   </ImportGroup>
 </Project>

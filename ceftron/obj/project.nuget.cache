@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2+UEWk4pLluDHEi9Y7+FeSFSd/f3GdJammvUFbDYgpMFWPbWbypSlEPHlPsysuha9ymxNk4Kw5TUc/lOV0IWBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Amandeep Pooni\\opensource\\ceftron\\ceftron\\ceftron.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Amandeep Pooni\\.nuget\\packages\\cef.redist.x64\\85.3.13\\cef.redist.x64.85.3.13.nupkg.sha512",
+    "C:\\Users\\Amandeep Pooni\\.nuget\\packages\\cef.redist.x86\\85.3.13\\cef.redist.x86.85.3.13.nupkg.sha512",
+    "C:\\Users\\Amandeep Pooni\\.nuget\\packages\\cefsharp.common\\85.3.130\\cefsharp.common.85.3.130.nupkg.sha512",
+    "C:\\Users\\Amandeep Pooni\\.nuget\\packages\\cefsharp.winforms\\85.3.130\\cefsharp.winforms.85.3.130.nupkg.sha512"
+  ],
+  "logs": []
+}

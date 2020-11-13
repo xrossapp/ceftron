@@ -13,9 +13,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)cef.redist.x86\79.1.36\build\cef.redist.x86.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x86\79.1.36\build\cef.redist.x86.props')" />
-    <Import Project="$(NuGetPackageRoot)cef.redist.x64\79.1.36\build\cef.redist.x64.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x64\79.1.36\build\cef.redist.x64.props')" />
-    <Import Project="$(NuGetPackageRoot)cefsharp.common\79.1.360\build\CefSharp.Common.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\79.1.360\build\CefSharp.Common.props')" />
-    <Import Project="$(NuGetPackageRoot)cefsharp.winforms\79.1.360\build\CefSharp.WinForms.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.winforms\79.1.360\build\CefSharp.WinForms.props')" />
+    <Import Project="$(NuGetPackageRoot)cef.redist.x86\85.3.13\build\cef.redist.x86.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x86\85.3.13\build\cef.redist.x86.props')" />
+    <Import Project="$(NuGetPackageRoot)cef.redist.x64\85.3.13\build\cef.redist.x64.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x64\85.3.13\build\cef.redist.x64.props')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.common\85.3.130\build\CefSharp.Common.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\85.3.130\build\CefSharp.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.winforms\85.3.130\build\CefSharp.WinForms.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.winforms\85.3.130\build\CefSharp.WinForms.props')" />
   </ImportGroup>
 </Project>
