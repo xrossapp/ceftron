@@ -52,3 +52,9 @@ Example:
 ```
 ceftron DashForms local
 ```
+
+To make the app open in fullscreen mode, append fullscreen to the command(optional)
+
+```
+ceftron DashForms forms.dash.management/console fullscreen
+```
